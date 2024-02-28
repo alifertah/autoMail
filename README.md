@@ -34,3 +34,6 @@ Copy code
 `python script.py email` 
 
 Replace `email` with the email address you want to use as an argument for the script.
+
+
+# DONT FORGET TO STAR THE REPO
