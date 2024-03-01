@@ -1,6 +1,6 @@
 # AutoMail
 
-This is python script to costume a mail that you send usually, and send it by giving only the email of the receiver instead of sending it.
+This is python script to costume a mail that you send usually, and send it by giving only the email of the receiver instead of sending it
 
 ## Cloning the Repository
 
