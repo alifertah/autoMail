@@ -6,7 +6,6 @@ from email.mime.multipart import MIMEMultipart
 from email import encoders
 from email.mime.base import MIMEBase
 
-
 load_dotenv()
 file_to_send_name = os.getenv('ATTACHEMENT')
 attachment = open(file_to_send_name, 'rb')
@@ -26,8 +25,11 @@ message['To'] = receiver_email
 file = open(os.getenv("BODY"), 'rb')
 content = file.read()
 encoded_content = content.decode('utf-8')
-message['Subject'] =  os.getenv('SUBJECT')
 
+if (sys.argv == 3):
+    message['Subject'] = sys.argv[2]
+else:
+    message['Subject'] = os.getenv('SUBJECT')
 body = encoded_content
 message.attach(MIMEText(body, 'plain'))
 message.attach(part)

@@ -1,3 +1,5 @@
 .env
 message.txt
+messageEn.txt
+stg.txt
 *.pdf
