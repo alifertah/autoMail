@@ -26,7 +26,7 @@ file = open(os.getenv("BODY"), 'rb')
 content = file.read()
 encoded_content = content.decode('utf-8')
 
-if (sys.argv == 3):
+if len(sys.argv) == 3:
     message['Subject'] = sys.argv[2]
 else:
     message['Subject'] = os.getenv('SUBJECT')
